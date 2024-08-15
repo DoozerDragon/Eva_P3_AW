@@ -15,7 +15,7 @@ function mostrarInputs() {
             <button onclick="calcularArea()">Calcular Área</button>
         `;
     } else if (figura === 'triangulo') {
-        imagenFigura.src = 'img/triangulo.jpg';
+        imagenFigura.src = 'img/triangulo.png';
         inputsDiv.innerHTML = `
             <label for="base">Base del triángulo (cm):</label>
             <input type="number" id="base" min="0">
@@ -24,7 +24,7 @@ function mostrarInputs() {
             <button onclick="calcularArea()">Calcular Área</button>
         `;
     } else if (figura === "circulo") {
-        imagenFigura.src = "img/circulo.jpg";
+        imagenFigura.src = "img/circulo.png";
         inputsDiv.innerHTML = `
             <label for="radio">Radio del círculo (cm):</label>
             <input type="number" id="radio" min="0">
