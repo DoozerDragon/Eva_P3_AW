@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cálculo de Áreas</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="interruptor-modo">
+            <button id="cambiarModo">Cambiar a Modo Oscuro 🌙</button>
+        </div>
+        <h1>Cálculo de Áreas</h1>
+
+        <div class="seleccion-figura">
+            <label for="figura">Selecciona una figura geométrica:</label>
+            <select id="figura" onchange="mostrarInputs()">
+                <option value="">--Selecciona--</option>
+                <option value="cuadrado">Cuadrado</option>
+                <option value="triangulo">Triángulo</option>
+                <option value="circulo">Círculo</option>
+            </select>
+        </div>
+
+        <div id="inputs" style="display:none;">
+            <!-- Inputs dinámicos según la figura seleccionada -->
+        </div>
+
+        <div class="resultado" id="resultado"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
