@@ -29,6 +29,30 @@ label {
     margin: 10px 0 5px;
 }
 
+/* Estilo del menú desplegable */
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #007BFF;
+    background: linear-gradient(to right, #007BFF, #00C6FF);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+select:hover {
+    background: linear-gradient(to right, #0056b3, #0086ff);
+    border-color: #0056b3;
+}
+
+select option {
+    color: #333;
+    background-color: #fff;
+}
+
 input[type="number"] {
     width: 100%;
     padding: 8px;

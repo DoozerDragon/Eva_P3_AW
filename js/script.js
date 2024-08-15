@@ -8,14 +8,14 @@ function mostrarInputs() {
     imagenFigura.style.display = 'block';
 
     if (figura === 'cuadrado') {
-        imagenFigura.src = 'https://via.placeholder.com/150?text=Cuadrado'; // Imagen de ejemplo
+        imagenFigura.src = "img/cuadrado.jpg";
         inputsDiv.innerHTML = `
             <label for="lado">Lado del cuadrado (cm):</label>
             <input type="number" id="lado" min="0">
             <button onclick="calcularArea()">Calcular Área</button>
         `;
     } else if (figura === 'triangulo') {
-        imagenFigura.src = 'https://via.placeholder.com/150?text=Triángulo'; // Imagen de ejemplo
+        imagenFigura.src = 'img/triangulo.jpg';
         inputsDiv.innerHTML = `
             <label for="base">Base del triángulo (cm):</label>
             <input type="number" id="base" min="0">
@@ -23,8 +23,8 @@ function mostrarInputs() {
             <input type="number" id="altura" min="0">
             <button onclick="calcularArea()">Calcular Área</button>
         `;
-    } else if (figura === 'circulo') {
-        imagenFigura.src = 'https://via.placeholder.com/150?text=Círculo'; // Imagen de ejemplo
+    } else if (figura === "circulo") {
+        imagenFigura.src = "img/circulo.jpg";
         inputsDiv.innerHTML = `
             <label for="radio">Radio del círculo (cm):</label>
             <input type="number" id="radio" min="0">
